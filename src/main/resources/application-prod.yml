@@ -4,11 +4,10 @@ spring:
     username: ${PROD_DB_USERNAME}
     password: ${PROD_DB_PASSWORD}
     name: HealthPlanWeb
-
   sql:
     init:
       mode: always
-
- jpa:
-    hibernate:
-      ddl-auto: update
+    jpa:
+      hibernate:
+        ddl-auto: update
+      database-platform: org.hibernate.dialect.MySQLDialect
