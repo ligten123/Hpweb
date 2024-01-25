@@ -9,3 +9,6 @@ spring:
     init:
       mode: always
 
+ jpa:
+    hibernate:
+      ddl-auto: update
