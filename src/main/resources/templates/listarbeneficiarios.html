@@ -72,16 +72,22 @@
 
 <!-- Conteúdo da Página -->
 	<style>
-        @media (max-width: 767px) {            
-		.table{
-		width: -50px;
-		}
+    @media (max-width: 767px) {
+        .table-responsive {
+            overflow-x: auto;
         }
-    </style>
+
+        .table {
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+</style>
 <div class="container-lg mt-3">
     <h1>Lista de beneficiários cadastrados</h1>
     <div class="card">
-        <div class="card-body">         
+        <div class="card-body"> 
+	<div class="table-responsive">
             <table class="table">
                 <thead>
                     <tr>
@@ -100,6 +106,7 @@
         </div>
     </div>
 </div>
+</div>	
 
 <!-- Scripts (jQuery não pode ser o slim que vem do Bootstrap) -->
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"
